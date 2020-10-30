@@ -1,0 +1,33 @@
+<!doctype html>
+{% load static %}
+{% static "/img/place" as baseUrl %}
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Login</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+</head>
+<body>
+    <form action="login" method="post">
+    {% csrf_token %}
+        <input type="text" name="username" placeholder="UserName"> <br>
+        <input type="password" name="password" placeholder="Password"> <br>
+        <input type="Submit">
+    </form>
+
+    <div>
+        {% for message in messages %}
+            <h3>{{message}}s</h3>
+        {% endfor %}
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+python --version
+Python 3.8.3
+
+pip --version
+pip 20.2.2 from c:\users\sanjay.kumar12\appdata\local\programs\python\python38\lib\site-packages\pip (python 3.8)
+
+# ========================================================================================
+update pip installer:
+# ========================================================================================
+
+C:\Users\sanjay.kumar12>pip install -- upgrade
+ERROR: Could not find a version that satisfies the requirement upgrade (from versions: none)
+ERROR: No matching distribution found for upgrade
+WARNING: You are using pip version 20.2.2; however, version 20.2.3 is available.
+You should consider upgrading via the 'c:\users\sanjay.kumar12\appdata\local\programs\python\python38\python.exe -m pip install --upgrade pip' command.
+
+C:\Users\sanjay.kumar12>cd AppData\Local\Programs\Python\Python38
+
+C:\Users\sanjay.kumar12\AppData\Local\Programs\Python\Python38>python.exe -m pip install --upgrade pip
+Collecting pip
+  Downloading pip-20.2.3-py2.py3-none-any.whl (1.5 MB)
+     |████████████████████████████████| 1.5 MB 1.6 MB/s
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 20.2.2
+    Uninstalling pip-20.2.2:
+      Successfully uninstalled pip-20.2.2
+Successfully installed pip-20.2.3
+
+C:\Users\sanjay.kumar12\AppData\Local\Programs\Python\Python38>
+
+# ========================================================================================
+1st install environment wrapper:
+pip install virtualenvwrapper-win
+
+# ========================================================================================
+
+C:\Users\sanjay.kumar12\PycharmProjects\Projects\python_Django1>pip install virtualenvwrapper-win
+Collecting virtualenvwrapper-win
+  Downloading virtualenvwrapper-win-1.2.6.tar.gz (21 kB)
+Collecting virtualenv
+  Downloading virtualenv-20.0.31-py2.py3-none-any.whl (4.9 MB)
+     |████████████████████████████████| 4.9 MB 1.3 MB/s
+Collecting distlib<1,>=0.3.1
+  Downloading distlib-0.3.1-py2.py3-none-any.whl (335 kB)
+     |████████████████████████████████| 335 kB 6.4 MB/s
+Collecting six<2,>=1.9.0
+  Downloading six-1.15.0-py2.py3-none-any.whl (10 kB)
+Collecting filelock<4,>=3.0.0
+  Downloading filelock-3.0.12-py3-none-any.whl (7.6 kB)
+Collecting appdirs<2,>=1.4.3
+  Downloading appdirs-1.4.4-py2.py3-none-any.whl (9.6 kB)
+Using legacy 'setup.py install' for virtualenvwrapper-win, since package 'wheel' is not installed.
+Installing collected packages: distlib, six, filelock, appdirs, virtualenv, virtualenvwrapper-win
+    Running setup.py install for virtualenvwrapper-win ... done
+Successfully installed appdirs-1.4.4 distlib-0.3.1 filelock-3.0.12 six-1.15.0 virtualenv-20.0.31 virtualenvwrapper-win-1.2.6
+WARNING: You are using pip version 20.2.2; however, version 20.2.3 is available.
+You should consider upgrading via the 'c:\users\sanjay.kumar12\appdata\local\programs\python\python38\python.exe -m pip install --upgrade pip' command.
+
+C:\Users\sanjay.kumar12\PycharmProjects\Projects\python_Django1>
+
+# ==================================================================================================================
+2nd  create a envrironment:
+
+
+C:\Users\sanjay.kumar12\AppData\Local\Programs\Python\Python38>cls
+
+C:\Users\sanjay.kumar12\AppData\Local\Programs\Python\Python38>mkvirtualenv test
+ C:\Users\sanjay.kumar12\Envs is not a directory, creating
+created virtual environment CPython3.8.3.final.0-64 in 15151ms
+  creator CPython3Windows(dest=C:\Users\sanjay.kumar12\Envs\test, clear=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=C:\Users\sanjay.kumar12\AppData\Local\pypa\virtualenv)
+    added seed packages: pip==20.2.2, setuptools==49.6.0, wheel==0.35.1
+  activators BashActivator,BatchActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator
+
+(test) C:\Users\sanjay.kumar12\AppData\Local\Programs\Python\Python38>cd \
+
+(test) C:\>cd Users\sanjay.kumar12\PycharmProjects\Projects\python_Django1
+
+(test) C:\Users\sanjay.kumar12\PycharmProjects\Projects\python_Django1>mkvirtualenv test
+
+    ERROR: virtualenv "test" already exists
+
+
+C:\Users\sanjay.kumar12\PycharmProjects\Projects\python_Django1>mkvirtualenv test1
+created virtual environment CPython3.8.3.final.0-64 in 5287ms
+  creator CPython3Windows(dest=C:\Users\sanjay.kumar12\Envs\test1, clear=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=C:\Users\sanjay.kumar12\AppData\Local\pypa\virtualenv)
+    added seed packages: pip==20.2.2, setuptools==49.6.0, wheel==0.35.1
+  activators BashActivator,BatchActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator
+
+(test1) C:\Users\sanjay.kumar12\PycharmProjects\Projects\python_Django1>
+
+
+# ========================================================================================
+now install django:
+# ========================================================================================
+C:\Users\sanjay.kumar12\PycharmProjects\Projects\python_Django1>
+
+
+(test1) C:\Users\sanjay.kumar12\PycharmProjects\Projects\python_Django1>pip install django
+Collecting django
+  Downloading Django-3.1.1-py3-none-any.whl (7.8 MB)
+     |████████████████████████████████| 7.8 MB 131 kB/s
+Collecting asgiref~=3.2.10
+  Downloading asgiref-3.2.10-py3-none-any.whl (19 kB)
+Collecting pytz
+  Downloading pytz-2020.1-py2.py3-none-any.whl (510 kB)
+     |████████████████████████████████| 510 kB ...
+Collecting sqlparse>=0.2.2
+  Downloading sqlparse-0.3.1-py2.py3-none-any.whl (40 kB)
+     |████████████████████████████████| 40 kB 647 kB/s
+Installing collected packages: asgiref, pytz, sqlparse, django
+Successfully installed asgiref-3.2.10 django-3.1.1 pytz-2020.1 sqlparse-0.3.1
+WARNING: You are using pip version 20.2.2; however, version 20.2.3 is available.
+You should consider upgrading via the 'C:\Users\sanjay.kumar12\Envs\test1\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(test1) C:\Users\sanjay.kumar12\PycharmProjects\Projects\python_Django1>
+
+
+# ========================================================================================
+
+(test1) C:\Users\sanjay.kumar12\PycharmProjects\Projects\python_Django1>django-admin --version
+3.1.1
+
+
+
+# ======================================================================================== verify folder now:
+
+(test1) C:\Users\sanjay.kumar12\PycharmProjects\Projects\python_Django1\django_projects>django-admin startproject project_1
+
+(test1) C:\Users\sanjay.kumar12\PycharmProjects\Projects\python_Django1\django_projects>
+
+
+# ========================================================================================
+
+start server:
+
+
+\project_1>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply
+the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+September 28, 2020 - 18:54:01
+Django version 3.1.1, using settings 'project_1.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[28/Sep/2020 18:54:08] "GET / HTTP/1.1" 200 16351
+[28/Sep/2020 18:54:08] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[28/Sep/2020 18:54:08] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 2
+00 85876
+[28/Sep/2020 18:54:08] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200
+86184
+[28/Sep/2020 18:54:08] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200
+ 85692
+Not Found: /favicon.ico
+[28/Sep/2020 18:54:09] "GET /favicon.ico HTTP/1.1" 404 1975
+
+-- now server is started, we need to create our first app:
+virtual environment: test1

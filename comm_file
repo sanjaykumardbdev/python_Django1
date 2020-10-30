@@ -1,0 +1,88 @@
+1.. make environment:
+C:\Users\sanjay.kumar12\AppData\Local\Programs\Python\Python38>mkvirtualenv test
+
+2..now install django:
+
+(test1) C:\Users\sanjay.kumar12\PycharmProjects\Projects\python_Django1>pip install django
+
+3.. check your version:
+(test1) C:\Users\sanjay.kumar12\PycharmProjects\Projects\python_Django1>django-admin --version
+3.1.1
+
+4.. create/ start new project command is: django-admin startproject project_1
+
+
+(test1) C:\Users\sanjay.kumar12\PycharmProjects\Projects\python_Django1\django_projects>django-admin startproject project_1
+
+5..verify folder now:
+         C:\Users\sanjay.kumar12\PycharmProjects\Projects\python_Django1\django_projects\project_1>
+        new files will get created manage.py, settings.py, urls.py etc:
+
+6.. move to new project which is started now:
+cd project_1:
+(test1) C:\Users\sanjay.kumar12\PycharmProjects\Projects\python_Django1\django_projects\project_1>
+
+7.. set a virtual env which you have create before in step 1:
+    note: no need to set virtual env if using same window.
+workon test1
+==================================================================================================
+==================================================================================================
+
+8.. create a new app calc:
+    python manage.py startapp calc
+        verify: find a folder calc inside project_1.
+
+
+8.1: create urls in calc app , its own urls:
+        write you code: list all urls in tuple:
+
+8.2: create view file to handle all request and response:
+        create function to handle request:
+
+8.3: add you app in main project:               path('', include('calc.urls')),
+     project_1\urls.py
+
+8.3: Run the server:
+     C:\Users\sanjay.kumar12\PycharmProjects\Projects\python_Django1\django_projects\project_1>python manage.py runserver
+     python manage.py runserver
+
+8.4: Starting development server at http://127.0.0.1:8000/
+     view the page:
+
+
+9: create separate page and call it:
+    create folder webpg1 and create file: home.html
+    change in main_project i.e, project_1\setting.py    @ add path of new dir:
+
+10: change in calc\views.py: render the req and res.
+
+
+1: create form: html data 				home.html
+2: create function: 					views.py
+	3: add this function to 			urls.py
+	4: update in result page: 			result.html
+
+-- new project: travello
+C:\Users\sanjay.kumar12\PycharmProjects\Projects\python_Django1\django_projects\project_1>workon test1
+(test1) C:\Users\sanjay.kumar12\PycharmProjects\Projects\python_Django1\django_projects\project_1>python manage.py startapp travello
+
+
+
+
+
+
+
+
+
+
+
+
+
+C:\Users\sanjay.kumar12\PycharmProjects\Projects\Django_Demo1\P_Demo1>python manage.py startapp Accounts
+C:\Users\sanjay.kumar12\PycharmProjects\Projects\Django_Demo1\P_Demo1>
+new folder created:
+
+added code in project/url: about account url:
+
+
+
