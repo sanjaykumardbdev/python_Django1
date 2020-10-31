@@ -1,6 +1,6 @@
 python --version
 Python 3.8.3
--- update
+-- update from git web
 pip --version
 pip 20.2.2 from c:\users\sanjay.kumar12\appdata\local\programs\python\python38\lib\site-packages\pip (python 3.8)
 
